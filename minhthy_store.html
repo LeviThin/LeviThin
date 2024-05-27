@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minh Thy Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4caf50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .products img {
+            width: 100%;
+            max-width: 300px;
+        }
+        .product {
+            display: inline-block;
+            margin: 20px;
+            vertical-align: top;
+        }
+        footer {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Minh Thy Store</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container" id="home">
+    <h2>Welcome to Minh Thy Store</h2>
+    <p>Your one-stop shop for organic shampoo and shower products. Experience the natural care your body deserves.</p>
+</div>
+
+<div class="container" id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+        <div class="product">
+            <img src="data:image/png;base64,<?=base64_encode(file_get_contents('/mnt/data/2.png'))?>" alt="V-Fresh Xịt Thơm Miệng">
+            <h3>V-Fresh Xịt Thơm Miệng</h3>
+            <ul>
+                <li>Khử mùi thức ăn, dạ dày</li>
+                <li>Giúp hơi thở thơm mát</li>
+                <li>Khử trùng răng miệng</li>
+                <li>Khử độc Nicotin thuốc lá</li>
+                <li>Ngăn ngừa viêm lợi, viêm nhiệt miệng</li>
+            </ul>
+        </div>
+        <div class="product">
+            <img src="data:image/png;base64,<?=base64_encode(file_get_contents('/mnt/data/7.png'))?>" alt="Sữa Tắm Nam">
+            <h3>Sữa Tắm Nam</h3>
+            <ul>
+                <li>Khử khuẩn, vệ sinh da</li>
+                <li>Hương gỗ trầm ấm</li>
+                <li>Giảm tiết mồ hôi, cấp ẩm</li>
+                <li>Bảo vệ da khỏi tia UV</li>
+                <li>Giúp da trắng sáng, mịn màng từ sâu bên trong</li>
+            </ul>
+        </div>
+        <div class="product">
+            <img src="data:image/png;base64,<?=base64_encode(file_get_contents('/mnt/data/8.png'))?>" alt="Dầu Gội Đầu">
+            <h3>Dầu Gội Đầu</h3>
+            <ul>
+                <li>Giúp làm sạch sâu da đầu</li>
+                <li>Đánh bay gàu ngứa</li>
+                <li>Giảm xơ rối, gãy rụng</li>
+                <li>Giúp tóc phục hồi hư tổn</li>
+                <li>Giúp tóc chắc khỏe, suôn mượt tự nhiên</li>
+            </ul>
+        </div>
+        <div class="product">
+            <img src="data:image/png;base64,<?=base64_encode(file_get_contents('/mnt/data/9.png'))?>" alt="Dầu Xả Dưỡng Tóc">
+            <h3>Dầu Xả Dưỡng Tóc</h3>
+            <ul>
+                <li>Giúp cấp ẩm, cung cấp chất dinh dưỡng cho tóc</li>
+                <li>Giúp tóc chắc khỏe, suôn mượt tự nhiên</li>
+                <li>Giữ màu tóc vượt trội, bảo vệ tận gốc</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="about">
+    <h2>About Us</h2>
+    <p>At Minh Thy Store, we are dedicated to providing high-quality, organic personal care products. Our mission is to ensure that our customers experience the best in natural care for their hair and skin.</p>
+</div>
+
+<div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p>For any inquiries or orders, please contact us at:</p>
+    <p>Email: contact@minhthy.store</p>
+    <p>Phone: +84 123 456 789</p>
+    <p>Address: 123 Organic Lane, Eco City, Vietnam</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Minh Thy Store. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
